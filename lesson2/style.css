@@ -1,14 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-
-body, html {
-  width:100%;
-  height:100%;
-  background:#ddd;
-  font-family: 'Montserrat', sans-serif;
-  font-size:99px;
-  text-align:center;
+body { font-family: Ubuntu, sans-serif; font-size: 14px; box-sizing:border-box; height: 100vh; display:flex; align-items:center;justify-content:center;}
+.gridarea {
+	display: grid;
+	grid-gap: 7px;
+	max-width: 760px;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+    "header"
+		"nav"
+		"main"
+		"footer";
 }
+header, nav, main, footer {
+	border: 1px solid #333;
+	box-shadow: 0 0 10px #000;
+}
+header {
+	background-color: #999;
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	padding: 7px;
+	grid-area: header;
+	justify-content:center;
+	align-items:center;
+}
+h1 { font-size: 1rem;}
+nav {
+	background-color: black;
+	color: white;
+	padding: 7px;
+	grid-area: nav;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 5px;
+	padding: 5px;
+	grid-area: main;
+}
+section {padding:7px;}
+section p {
+	margin-left: 15px;
+}
+picture {
+	align-items:center;
+	text-align:center;
+}
+footer {
+	background-color: black;
+	color: white;
+	padding: 7px;
+	font-size: smaller;
+	grid-area: footer;
+	text-align:center;
+}
+.himage { text-align: center; }
+.icon {width: 60px; height: auto; }
+.bimage { width: 200px; height: auto;}
 
-div {
-  position:absolute;
+@media only screen and (min-width: 40em) {
+	.gridarea {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas:
+    "header  header  header"
+		"nav main main"
+		"footer  footer  footer";
+	}
+	
+	header {
+	  background-color: #999;
+	  grid-template-columns: 250px 1fr;
+  }
+	
+	main { grid-template-columns: 1fr 1fr; }
+	
+	h1 {font-size: 2rem;}
+	.icon {width: 80px; height: auto; }
+  .bimage { width: 200px; height: auto;}
+	
 }
