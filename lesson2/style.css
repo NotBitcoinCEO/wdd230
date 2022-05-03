@@ -1,71 +1,84 @@
-body {
-	font-size: 16px;
-	font-family: "Sansita", Ubuntu, sans-serif;
+body { font-family: Ubuntu, sans-serif; font-size: 14px; box-sizing:border-box; height: 100vh; display:flex; align-items:center;justify-content:center;}
+.gridarea {
+	display: grid;
+	grid-gap: 7px;
+	max-width: 760px;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+    "header"
+		"nav"
+		"main"
+		"footer";
 }
-/* phone or baseline views **************************/
+header, nav, main, footer {
+	border: 1px solid #333;
+	box-shadow: 0 0 10px #000;
+}
+header {
+	background-color: #999;
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	padding: 7px;
+	grid-area: header;
+	justify-content:center;
+	align-items:center;
+}
+h1 { font-size: 1rem;}
+nav {
+	background-color: black;
+	color: white;
+	padding: 7px;
+	grid-area: nav;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 main {
-	max-width: 767px;
-	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr;
-	font-size: 0.8rem;
+	grid-gap: 5px;
+	padding: 5px;
+	grid-area: main;
 }
-
-main section h2 {
-	color: #536878;
+section {padding:7px;}
+section p {
+	margin-left: 15px;
 }
-
-main section {
-	margin: 0.5rem;
-	border: 1px solid #bbb;
-	padding: 0 1rem;
-	background-color: #eee;
+picture {
+	align-items:center;
+	text-align:center;
 }
-
-main section:nth-child(2) {
-	display: none;
-	margin: 0.5rem;
+footer {
+	background-color: black;
+	color: white;
+	padding: 7px;
+	font-size: smaller;
+	grid-area: footer;
+	text-align:center;
 }
+.himage { text-align: center; }
+.icon {width: 60px; height: auto; }
+.bimage { width: 200px; height: auto;}
 
-main section:nth-child(3) {
-	grid-column: span 2;
-}
-
-.colimage {
-	box-shadow: 0 0 30px #333;
-}
-
-/* Tablet Views ******************************/
-@media only screen and (min-width: 37.5em) {
-	main {
-		grid-template-columns: 1fr 1fr;
-	}
-
-	main section:nth-child(2) {
-		display: block;
-	}
-
-	main section:nth-child(3) {
-		grid-column: span 2;
-	}
-
-	main section picture {
-		display: block;
-	}
-	main section picture img {
-		width: 100%;
-		height: auto;
-		border: 1px solid #bbb;
-	}
-}
-
-/* Desktop Views ****************************/
-@media only screen and (min-width: 60em) {
-	main {
+@media only screen and (min-width: 40em) {
+	.gridarea {
 		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas:
+    "header  header  header"
+		"nav main main"
+		"footer  footer  footer";
 	}
-
-	main section:nth-child(3) {
-		grid-column: span 1;
-	}
+	
+	header {
+	  background-color: #999;
+	  grid-template-columns: 250px 1fr;
+  }
+	
+	main { grid-template-columns: 1fr 1fr; }
+	
+	h1 {font-size: 2rem;}
+	.icon {width: 80px; height: auto; }
+  .bimage { width: 200px; height: auto;}
+	
 }
