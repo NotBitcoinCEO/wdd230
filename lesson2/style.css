@@ -1,4 +1,5 @@
 body { font-family: Ubuntu, sans-serif; font-size: 14px; box-sizing:border-box; height: 100vh; display:flex; align-items:center;justify-content:center;}
+
 .gridarea {
 	display: grid;
 	grid-gap: 7px;
