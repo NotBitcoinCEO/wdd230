@@ -23,8 +23,12 @@ main section {
 }
 
 main section:nth-child(2) {
-	display: none;
+	display: block;
 	margin: 0.5rem;
+}
+
+main section:nth-child(3) {
+	grid-column: span 2;
 }
 
 .colimage {
