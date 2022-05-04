@@ -93,6 +93,10 @@
       left: 0;
       transform: none;
     }
+    
+    .nav-left {
+      display: none
+    }
   }
   
   main {
