@@ -76,16 +76,16 @@ header img {
 }
 
 /* Right-aligned section inside the top navigation */
-.nav-right {
+/* .nav-right {
   float: right;
-}
+} */
 
-/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices)
 @media screen and (max-width: 600px) {
   .nav a, .topnav-right {
     float: none;
     display: block;
-  }
+  } */
 
   .nav-centered a {
     position: relative;
@@ -93,7 +93,7 @@ header img {
     left: 0;
     transform: none;
   }
-}
+/* } */
 
 main {
   padding: 3em;
