@@ -38,14 +38,14 @@ header img {
 }
 
 /* Add a black background color to the top navigation */
-.nav {
+/* .nav {
   position: relative;
   background-color: #333;
   overflow: hidden;
-}
+} */
 
 /* Style the links inside the navigation bar */
-.nav a {
+.nav {
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -67,7 +67,7 @@ header img {
 }
 
 /* Centered section inside the top navigation */
-.nav-centered a {
+.nav-centered {
   float: none;
   position: absolute;
   top: 50%;
@@ -87,8 +87,8 @@ header img {
     display: block;
   } */
 
-  .nav-centered a {
-    position: relative;
+  .nav-centered {
+    position: center;
     top: 0;
     left: 0;
     transform: none;
