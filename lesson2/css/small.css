@@ -54,7 +54,7 @@
   }
 
   .nombre {
-      font-family:'Open Sans', sans-serif;
+      font-family:'Oswald', sans-serif;
       color: var(--primary-color);
       font-size: 20px;
       margin: 0em .5em .5em .5em;
@@ -72,7 +72,7 @@
       border-radius: 2px;
   }
   h2{
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Oswald', sans-serif;
       background-color: var(--accent2-color);
       color: var(--primary-color);
       font-size: 20px;
@@ -81,7 +81,7 @@
   }
 
   h3 {
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Oswald', sans-serif;
       color: var(--accent3-color);
       font-size: 17px;
       margin: 1.5em 1em 0em 0em;
@@ -89,7 +89,7 @@
 
   }
    a {
-      font-family:'Open Sans', sans-serif ;
+      font-family:'Oswald', sans-serif;
       color: var(--accent3-color);
       font-size: 14px;
       margin: 0px;
@@ -103,7 +103,7 @@
   }
 
   p {
-      font-family:'Open Sans', sans-serif;
+      font-family:'Oswald', sans-serif;
       color: var(--accent3-color);
       font-size: 14px;
       margin: 1.5em 1em 0em 0em;
