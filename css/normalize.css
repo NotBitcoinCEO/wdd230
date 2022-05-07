@@ -62,7 +62,7 @@ header img {
 
 /* Add a color to the active/current link */
 .nav a.active {
-  background-color: #04AA6D;
+  background-color: #041daa;
   color: white;
 }
 
@@ -137,3 +137,8 @@ ul {
 }
 
 
+/* --primary-color: #F5F2EA;
+  --secondary-color: #D0C7C2;
+  --accent1-color: #187bcd;
+  --accent2-color: #1167b1;
+  --accent3-color: #03254c;} */
