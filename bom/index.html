@@ -3,46 +3,37 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sean Layton: WDD 230 Assignment Portal</title> 
    <meta name="description" content="Favorite Scripture Page">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="/lesson3/css3/normalize.css">
    <!-- <link rel="stylesheet" href="css/small.css" type="text/css">
    <link rel="stylesheet" href="css/medium.css" type="text/css"> -->
-
+   
 </head>
-<body>
     <header>
         <img src="images/bom.png" alt="plates picture" width="100" height="150">
         <div class="headertext">
             <h1>Favorite Book of Mormon Scriptures</h1>
         </div>
     </header>
+
     <nav>
-        <!-- Top navigation -->
-<div class="nav">
-
-    <!-- Centered link -->
-    <!-- <div class="nav-centered">
-        <a href="target.html">Target Audience</a>
-        <a href="color.html">Color Scheme</a>
-        <a href="typography.html">Typography</a>
-    </div> -->
-  
+        <div class="nav">
     <!-- Left-aligned links (default) -->
-    <div class="nav-left">
-        <a href="/index.html">Home</a>
-        <a href="https://www.churchofjesuschrist.org/comeuntochrist">Come Unto Christ</a>
-        <a href="https://www.youtube.com/c/churchofjesuschrist">Watch Church Videos</a>
-        <a href="https://www.thechurchnews.com/">Church News</a>
-    <div class="nav-left">
-</div>
-
+            <div class="nav-left">
+                <a href="/index.html">Home</a>
+                <a href="https://www.churchofjesuschrist.org/comeuntochrist">Come Unto Christ</a>
+                <a href="https://www.youtube.com/c/churchofjesuschrist">Watch Church Videos</a>
+                <a href="https://www.thechurchnews.com/">Church News</a>
+            </div>
+        </div>
     </nav>
+
     <main>
         <h2>Favorite Scripture</h2>
-        <hr/>
         <body>
             <h1>📘 Book of Mormon - Top 25</h1>
     <!-- <div> -->
@@ -51,13 +42,9 @@
                 <input type="text" id="fav" placeholder="Alma 36" required></label>
             <button type="submit">Add Scripture</button>
         </div>
-        <!-- <div class="listcontainer"> -->
-            <!-- <ul class="list">
-            </ul> -->
-
             <ul>
                 <script src="js/bom.js"></script>
-
+            </ul>
             <script>
                 const list = document.querySelector('ul');
                 const input = document.querySelector('input');
@@ -65,7 +52,7 @@
 
                 button.addEventListener('click', () => {
                     const myItem = input.value;
-                    input.value = '';
+                    input.value = ' ';
 
                     const listItem = document.createElement('li');
                     const listText = document.createElement('span');
@@ -84,17 +71,12 @@
                     input.focus();
                 });
             </script>
-            </ul>
-        <!-- </div> -->
-    <!-- </div> -->
         </body>
-        <hr/>
     </main>
  <footer>
-    Favorite Book of Mormon Scripture <div id="current_date"></p>
+    Favorite Book of Mormon Scripture <div id="current_date"></div>
         <script>
         document.getElementById("current_date").innerHTML = Date();
         </script>
  </footer>   
-</body>
 </html>
