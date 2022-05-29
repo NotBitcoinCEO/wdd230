@@ -277,3 +277,11 @@ body {
     width: 12.5rem;
   }
   
+  .heroImg {
+    width: 350px;
+  }
+  
+  .action-call {
+    grid-column: 2/4;
+   grid-row: 1/3;
+  }

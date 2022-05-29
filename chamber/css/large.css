@@ -70,5 +70,9 @@
     .spotlight-three {
       display: block;
     }
+
+    .heroImg {
+      width: 800px;
+    }
   }
   
