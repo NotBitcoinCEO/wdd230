@@ -1,0 +1,21 @@
+@media(min-width:60em){
+  main {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;}
+
+  #repetition {
+      grid-column: 1/2;
+      grid-row: 1; 
+  }
+
+  #whiteSpace {
+      grid-column: 2/3;
+      grid-row: 1;
+  }
+
+  #ruleOfThirds {
+      grid-column: 3/4;
+      grid-row: 1; 
+  }
+}

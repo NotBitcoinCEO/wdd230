@@ -1,0 +1,197 @@
+@mixin animation ($delay, $duration, $animation, $infinite) {
+    -webkit-animation-delay: $delay;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-name: $animation;
+    -webkit-animation-iteration-count:$infinite;
+
+    -moz-animation-delay: $delay;
+    -moz-animation-duration: $duration;
+    -moz-animation-name: $animation;
+    -moz-animation-iteration-count:$infinite;
+
+    -o-animation-delay: $delay;
+    -o-animation-duration: $duration;
+    -o-animation-name: $animation;
+    -o-animation-iteration-count:$infinite;
+
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $animation;
+    animation-iteration-count:$infinite;
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@include keyframes(hover) {
+  0% {
+    visibility: visible;
+    border-color: rgba(255, 255, 255, 1);
+  }
+  100% {
+    width: 120px;
+    height: 120px;
+    visibility: visible;
+    border-color: rgba(255, 255, 255, 0);
+  }
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #999898;
+}
+.box{
+  width: 200px;
+  height: 270px;
+  margin: 20px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0.7px 1px 0.3px rgba(66,66,66,0.5);
+} 
+  &:nth-child(1){
+    .color{
+      background: #f2f2f2;
+    }
+  }
+  &:nth-child(2){
+    .color{
+      background: #041daa;
+    }
+  }
+  &:nth-child(3){
+    .color{
+      background: #4e4cac;
+    }
+  }
+  &:nth-child(4){
+    .color{
+      background: #333;
+    }
+  }
+  .color{
+    width: 120px;
+    height: 120px;
+    margin: 30px 40px 50px;
+    display: inline-block;
+    border-radius: 50%;
+    &::before{
+      content: "#f2f2f2";
+      display: block;
+      visibility: hidden;
+      margin: auto;
+      width: 0px;
+      height: 0px;
+      position: relative;
+      top: 50%;
+      transform: translatey(-50%);
+      border: 10px solid rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+    }
+    &:hover{
+      &::before{
+        @include animation( 0s, 1s, hover, infinite);
+      }
+    }
+  }
+
+  /* .color{
+    width: 120px;
+    height: 120px;
+    margin: 30px 40px 50px;
+    display: inline-block;
+    border-radius: 50%;
+    &::before{
+      content: "";
+      display: block;
+      visibility: hidden;
+      margin: auto;
+      width: 0px;
+      height: 0px;
+      position: relative;
+      top: 50%;
+      transform: translatey(-50%);
+      border: 10px solid rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+    }
+    &:hover{
+      &::before{
+        @include animation( 0s, 1s, hover, infinite);
+      }
+    }
+  }
+
+  .color{
+    width: 120px;
+    height: 120px;
+    margin: 30px 40px 50px;
+    display: inline-block;
+    border-radius: 50%;
+    &::before{
+      content: "";
+      display: block;
+      visibility: hidden;
+      margin: auto;
+      width: 0px;
+      height: 0px;
+      position: relative;
+      top: 50%;
+      transform: translatey(-50%);
+      border: 10px solid rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+    }
+    &:hover{
+      &::before{
+        @include animation( 0s, 1s, hover, infinite);
+      }
+    }
+  }
+
+  .color{
+    width: 120px;
+    height: 120px;
+    margin: 30px 40px 50px;
+    display: inline-block;
+    border-radius: 50%;
+    &::before{
+      content: "";
+      display: block;
+      visibility: hidden;
+      margin: auto;
+      width: 0px;
+      height: 0px;
+      position: relative;
+      top: 50%;
+      transform: translatey(-50%);
+      border: 10px solid rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+    }
+    &:hover{
+      &::before{
+        @include animation( 0s, 1s, hover, infinite);
+      }
+    }
+  } */
+
+  p{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    color: #424242;
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+}

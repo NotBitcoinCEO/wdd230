@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W07 🏃🏽‍♂️ Activity: Progressive Loading of Images</title>
+    <meta name="description" content="Progressive Loading of images.">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="lesson7\lazyload.css">
+</head>
+<body>
+    <h1>
+        Progressive Loading of Images
+    </h1>
+    <div class="lazy-image">
+        <picture>
+            <img src="images2/1.jpg" data-src="images/1.jpg" alt="bridge image">  
+        </picture>
+        <picture>
+            <img src="images2/2.jpg" data-src="images/2.jpg" alt="art image">  
+        </picture>
+        <picture>
+            <img src="images2/3.jpg" data-src="images/3.jpg" alt="lake image">  
+        </picture>
+        <picture>
+            <img src="images2/4.jpg" data-src="images/4.jpg" alt="mountain image">  
+        </picture>
+        <picture>
+            <img src="images2/5.jpg" data-src="images/5.jpg" alt="purple image"> 
+        </picture>
+        <picture>
+            <img src="images2/6.jpg" data-src="images/6.jpg" alt="city image"> 
+        </picture>
+    </div>
+    <script src="js/lazyload.js"></script>
+</body>
+</html>

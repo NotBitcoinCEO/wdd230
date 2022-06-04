@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+  }
+  
+  body {
+    font-size: 0.9em;
+    font-family: 'Oswald', sans-serif;
+  }
+  header,
+  main,
+  footer {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  header {
+    margin: 1rem auto;
+    border: 1px solid #4e4cac;
+    padding: 0.5rem;
+    background-image: linear-gradient(
+      -225deg,
+      rgb(0, 0, 0) 0%,
+      rgb(29, 28, 28) 48%,
+      rgb(95, 93, 224) 100%
+    );
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    color: white;
+    box-shadow: 5px 5px 0px rgb(95 93 224);
+  }
+  
+  header img {
+    height: 80px;
+  }
+  
+  /* Add a black background color to the top navigation */
+  .nav {
+    position: relative;
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .nav a.active {
+    background-color: #133ab8;
+    color: white;
+  }
+  
+  /* Centered section inside the top navigation */
+  .nav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Right-aligned section inside the top navigation */
+  .nav-right {
+    float: right;
+  }
+  
+  /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+  @media screen and (max-width: 600px) {
+    .nav a, .topnav-right {
+      float: none;
+      display: block;
+    }
+  
+    .nav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+    
+    .nav-left {
+      display: none
+    }
+  }
+  
+  main {
+    padding: 3em;
+  }
+  
+  hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  
+  footer {
+    background-image: linear-gradient(
+      -225deg,
+      rgb(0, 0, 0) 0%,
+      rgb(29, 28, 28) 48%,
+      rgb(95, 93, 224) 100%
+    );
+    border: 1px solid #4e4cac;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-weight: 300;
+    box-shadow: 5px 5px 0px rgb(95 93 224);
+  }
+  
+  footer p {
+    text-align: center;
+  }
+  
+  h2 {
+    color: #050505;
+    text-align: center;
+  }
+  
+  h1{
+    font-size: 1.5em;
+  }
+  
+  ul {
+    padding: 3em;
+  }
+  

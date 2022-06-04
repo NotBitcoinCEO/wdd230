@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Jefferson Chamber of Commerce - BYU-Idaho WDD 230"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <title>Chamber of Commerce</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <div class="logo">
+          <img class="tree"
+            src="images/tree2.png"
+            alt="Jefferson Chamber of Commerce Logo"
+          />
+          <section class="headings">
+            <h1>Jefferson</h1>
+            <h2>Chamber of Commerce</h2>
+          </section>
+        </div>
+        <nav>
+          <ul class="primary-nav">
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Important Dates</a></li>
+            <li><a href="#">Members</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </nav>
+        <div class="social">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img src="images/fb.png" alt="Facebook logo"
+          /></a>
+          <a href="https://www.linkedin.com/" target="_blank"
+            ><img src="images/linkedin.png" alt="Linkedin logo"
+          /></a>
+          <p class="current-date"></p>
+        </div>
+        <button id="hamburger-button">
+          <span>&#9776;</span><span>X</span>
+        </button>
+      </div>
+      <ul id="hamburger-nav">
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <p class="welcome-sign">Welcome to Jefferson Chamber of Commerce!</p>
+    </header>
+    <main>
+      <section class="action-call">
+        <img
+          src="/images/wdd230.jpg"
+          alt="responsivepicturepleasework"
+          class="heroImage"
+        />
+        <!-- Couldnt find help this week. Will reach back out asap -->
+        <!-- <img srcset="wdd230-480w.jpg 480w,
+          wdd230-800w.jpg 800w" sizes="(max-width: 600px) 480px,
+          800px"src="/images/wdd230.jpg" alt="responsivepicturepleasework" class="heroImage"> -->
+       <h3>Hero with site name and call to action</h3>
+      </section>
+      <section class="event">
+        <h3>Upcoming Events</h3>
+      </section>
+      <section class="weather">
+        <h3>Programs and Events</h3>
+      </section>
+      <section class="news">
+        <h3>Resources</h3>
+      </section>
+      <section class="join">
+        <h3>Advocacy</h3>
+      </section>
+      <section class="spotlights">
+        <div>
+          <h3>Block 1</h3>
+        </div>
+        <div>
+          <h3>Block 2</h3>
+        </div>
+        <div class="spotlight3">
+          <h3>Spotlight 3</h3>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="general-info">
+        <div class="footer-logo">
+          <img
+            src="images/tree2.png"
+            alt="Jefferson Chamber of Commerce Logo"
+          />
+          <section class="footer-headings">
+            <h4>Jefferson Chamber of Commerce</h4>
+            <p>123 Madras Way, Madras, OR 97741</p>
+            <p>Madras, Oregon, USA</p>
+          </section>
+        </div>
+        <div class="footer-info">
+          <p>info@jeffersonchamber.com</p>
+          <p>541-330-6714</p>
+          <a
+            href="https://www.google.com/maps/place/Chamber+of+Commerce/@46.3486507,-124.1948438,7z/data=!4m6!3m5!1s0x54beea28f2c2a071:0xc1c07a8dfbd76248!8m2!3d44.6320791!4d-121.1308324!15sCiRqZWZmZXJzb24gY291bnR5IGNoYW1iZXIgb2YgY29tbWVyY2VaJiIkamVmZmVyc29uIGNvdW50eSBjaGFtYmVyIG9mIGNvbW1lcmNlkgETY2hhbWJlcl9vZl9jb21tZXJjZQ?shorturl=1"
+            target="_blank"
+            >📍 Location Map</a
+          >
+        </div>
+      </div>
+      <div class="small-copyright">
+        <p>
+          &copy; <span id="small-copyright-year"></span> Jefferson Chamber of
+          Commerce Project
+        </p>
+        <p>Sean Layton</p>
+        <p>WDD 230 Project</p>
+        <p>Last Updated: <span id="small-last-updated"></span></p>
+      </div>
+      <p class="medium-copyright">
+        &copy; <span id="medium-copyright-year"></span> All Rights Reserved | Site built by
+        Sean Layton | WDD 230 | Last Updated:
+        <span id="medium-last-updated"></span>
+      </p>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
