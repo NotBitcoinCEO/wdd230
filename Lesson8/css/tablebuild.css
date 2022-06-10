@@ -4,13 +4,13 @@ body {
 
 .background {
     background-color: #047488;
-    color: #FFFFFF;
+    color: #000000;
     font-weight: bolder;
 }
 
 caption {
     padding: 1rem;
-    font-size: 3rem;
+    font-size: 2rem;
     /* box-shadow: 5px 5px 5px #999999; */
 
 }
@@ -18,7 +18,7 @@ caption {
 table{
     max-width: 40rem;
     margin: 0 auto;
-    /* box-shadow: 5px 5px 5px #999999; */
+    /* box-shadow: 2px 2px 2px #999999; */
     width: 50%;
     text-align: center;
     
@@ -31,7 +31,7 @@ th, td{
 
 .background2 {
     background-color: #047488;
-    color: #FFFFFF;
+    color: #fffdfd;
 }
 
 tr:nth-child(odd){
@@ -43,7 +43,7 @@ tr:nth-child(even){
 }
 
 tfoot td{
-    font-size: .75rem;
+    font-size: .60rem;
 }
 
 .italics {
