@@ -482,7 +482,7 @@ form label.top input, form label.top select, textarea {
     border: solid 1px #FFFFFF;
     color: #FFFFFF;
     background-color: #fafbfc;
-    width: 100%;
+    width: 90%;
     font-size: 1rem;
     padding: .75rem;
     display: block;
@@ -521,4 +521,6 @@ form label.top input:required:valid {
 .required {
     color: #ffffff;
 }
+
+
   
