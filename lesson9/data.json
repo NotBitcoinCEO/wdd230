@@ -1,0 +1,77 @@
+{
+    "affiliates": [
+        {
+            "name": "Jefferson Construction Company",
+            "phone": "541-480-2727",
+            "email": "info@jeffcoconstruction",
+            "website": "jeffersonconst.com",
+            "image": "directory cards/construction.png",
+            "membership": "Gold"
+        },
+        {
+            "name": "Madras Flower Shop",
+            "phone": "541-404-8989",
+            "email": "info@flowers",
+            "website": "madrasflowers.com",
+            "image": "images/directory cards/flowershop.jpg",
+            "membership": "Gold"
+        },
+        {
+            "name": "Garden Depot",
+            "phone": "801-213-3346",
+            "email": "info@jeffcogardendepot.com",
+            "website": "pigsandablanket.com",
+            "image": "directory cards/gardendepot",
+            "membership": "Silver"
+        },
+        {
+            "name": "Jefferson Construction",
+            "phone": "541-280-7178",
+            "email": "business@jeffcoconstruction.com",
+            "website": "jeffcoconstruction.com",
+            "image": "directory cards/construction.png",
+            "membership": "Silver"
+        },
+        {
+            "name": "Akira Sushi",
+            "phone": "541-880-2232",
+            "email": "sushi@akira.com",
+            "website": "akirasushi.com",
+            "image": "directory cards/akirasushi.jpg",
+            "membership": "Silver"
+        },
+        {
+            "name": "Madras Burrito",
+            "phone": "541-641-5531",
+            "email": "food@madrasburrito.com",
+            "website": "madrasburrito.com",
+            "image": "directory cards/burrito.jpg",
+            "membership": "Silver"
+        },
+        {
+            "name": "Crosskeys Inn",
+            "phone": "541-581-3330",
+            "email": "reserve@crosskeys.com",
+            "website": "crosskeys.com",
+            "image": "directory cards/crosskeys.jpg",
+            "membership": "Bronze"
+        },
+        {
+            "name": "Central Oregon Livestock",
+            "phone": "541-280-4480",
+            "email": "auction@centraloregonlivestock.org",
+            "website": "centraloregonlivestock.org",
+            "image": "directory cards/livestockauction.jpg",
+            "membership": "Bronze"
+        },
+        {
+            "name": "Farm to Table",
+            "phone": "541-280-1713",
+            "email": "info@farmtotable.com",
+            "website": "farmtotable.com",
+            "image": "directory cards/market.jpg",
+            "membership": "NP"
+        }
+
+    ]
+}
