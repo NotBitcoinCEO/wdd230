@@ -1,0 +1,13 @@
+  figure {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    background-color: #FFFFFF;
+  }
+
+  .weather {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+

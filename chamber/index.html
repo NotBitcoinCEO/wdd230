@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/weather.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <title>Chamber of Commerce</title>
@@ -76,13 +77,18 @@
         <h3>Upcoming Events</h3>
       </section>
       <section class="weather">
-        <h3>Programs and Events</h3>
+        <h3>Current Weather</h3>
+        <p>The current temperature in Jefferson County is <span id="current-temp"></span> &deg;F</p>
+        <figure>
+          <img src="" alt="" id="weather-icon" />
+          <figcaption></figcaption>
+      </figure>    
       </section>
-      <section class="news">
+      <section class="resources">
         <h3>Resources</h3>
       </section>
       <section class="join">
-        <h3>Advocacy</h3>
+        <h3>Join Us</h3>
       </section>
       <section class="spotlights">
         <div>
@@ -135,5 +141,6 @@
       </p>
     </footer>
     <script src="js/index.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>

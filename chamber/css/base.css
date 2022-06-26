@@ -376,3 +376,9 @@ cursor: default;
 .cardborder {
   border: 2px solid #ffffff;
 }
+
+.weather {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
