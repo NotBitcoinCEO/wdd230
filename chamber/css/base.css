@@ -370,8 +370,12 @@ cursor: default;
 .navigation a, .responsive, a:link, a:visited {
   color: #FFFFFF;
   text-decoration: underline;
-  
 }
+
+.formbackground {
+  background-color: #b6bdb6;
+}
+
 
 .cardborder {
   border: 2px solid #ffffff;

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/large.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="css/form.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <title>Chamber of Commerce</title>
@@ -61,62 +62,14 @@
       <p class="welcome-sign">Welcome to Jefferson Chamber of Commerce!</p>
     </header>
     <main>
-      <section class="action-call">
-        <!-- <img srcset="wdd230-480w.jpg 480w,
-          wdd230-800w.jpg 800w" sizes="(max-width: 600px) 480px,
-          800px"src="/images/wdd230.jpg" alt="responsivepicturepleasework" class="heroImage"> -->
-       <h3>Explore - Connect with Oregon's Chamber! 
-          <p> &nbsp;</p>
-          <img src="images/mountains.jpg" width="400" alt="Linkedin logo"
-          />
-       </h3>
-      </section>
-      <section class="event">
-        <h3>Upcoming Events</h3>
-        <p> &nbsp;</p>
-        <li><a href="#">July 4th Parade</a></li>
-        <li><a href="#">Public Meeting (August)</a></li>
-        <li><a href="#">More Dates</a></li>
-      </section>
-      <section class="weather">
-        <h3>Current Weather</h3>
-        <p>The current temperature in Jefferson County is <span id="current-temp"></span> &deg;F</p>
-        <figure>
-          <img src="weather" alt="" id="weather-icon" />
-          <figcaption></figcaption>
-      </figure>    
-      </section>
-      <section class="resources">
-        <h3>Resources</h3>
-        <p> &nbsp;</p>
-        <li><a href="#">Codes & Index </a></li>
-        <li><a href="#">Contact Us</a></li>
-      </section>
-      <section class="join">
-        <h3>Join Us</h3>
-        <p> &nbsp;</p>
-        <li><a href="#">Become a member</a></li>
-        <li><a href="#">Volunteer</a></li>
-      </section>
-      <section class="spotlights">
-        <div>
-          <h3>Development</h3>
-          <p> &nbsp;</p>
-          <li><a href="#">Training</a></li>
-          <li><a href="#">Orientation</a></li>
-          <li><a href="#">Planning</a></li>
-        </div>
-        <div>
-          <h3>Advocacy</h3>
-          <p> &nbsp;</p>
-          <li><a href="#">Update Jun. 2022</a></li>
-          <li><a href="#">Update Mar. 2022</a></li>
-          <li><a href="#">Update Feb. 2022</a></li>
-        </div>
-        <div class="spotlight3">
-          <h3>Spotlight 3</h3>
-        </div>
-      </section>
+
+      <form class="contactform">
+		<input name="name" placeholder="What is your name?" class="name" required />
+		<input name="emailaddress" placeholder="What is your email?" class="email" type="email" required />
+    <textarea rows="4" cols="50" name="subject" placeholder="Please enter your message" class="message" required></textarea>
+    <input name="submit" class="btn" type="submit" value="Send" />
+    </form>
+      
     </main>
     <footer>
       <div class="general-info">
